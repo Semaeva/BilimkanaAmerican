@@ -1,0 +1,18 @@
+﻿@model BilimkanaAmerican.ViewModels.EditViewModel
+@{
+    ViewBag.Title = "Редактирвоание пользователя";
+}
+<form asp-action="Edit" asp-controller="Users" >
+    <div class="text-danger" asp-validation-summary="All">
+        <div class="form-group">
+            <input type="text" asp-for="Id" hidden/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label">Email </label>
+            <input type="text" asp-for="Email" class="form-control" />
+        </div>
+         <div class="form-group">
+               <input type="submit" value="Сохранить" class="btn btn-outline-secondary" />
+        </div>
+    </div>
+</form>

@@ -1,0 +1,21 @@
+﻿@using BilimkanaAmerican.ViewModels;
+@model CreateViewModel
+@{
+    ViewBag.Title = "Саздать нового пользователя";
+}
+
+<form asp-action="Create" asp-controller="Users" method="post">
+    <div class="text-danger" asp-validation-summary="All">
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"Email></label>
+        <input type="text" asp-for="Email" class="control-label" />
+    </div>
+      <div class="form-group">
+        <label asp-for="Password" class="control-label">Password</label>
+        <input type="password" asp-for="Password" class="control-label" />
+    </div>
+      <div class="form-group">
+        <input type="submit" value="Добавить" class="btn btn-outline-secondary" />
+    </div>
+    </div>
+</form>
