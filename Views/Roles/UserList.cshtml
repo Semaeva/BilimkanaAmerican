@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BilimkanaAmerican.Models.User>
+
+    <h2>Список пользователей</h2>
+    <table class="table">
+        @foreach(var item in Model){
+            <tr>
+                <td>@item.Email</td>
+                <td>
+                    <a asp-action="Edit" class="btn btn-sm btn-primary" asp-route-userId="@item.Id">Права доступа</a>
+                </td>
+            </tr>
+        }
+    </table>
