@@ -12,7 +12,7 @@ namespace BilimkanaAmerican.Controllers
         ApplicationContext context;
         public HomeController(ApplicationContext context) { this.context = context; }
 
-        [Authorize(Roles ="Admin")]
+      /*  [Authorize(Roles ="Admin")]*/
 
         public async Task<IActionResult> Index()
         {

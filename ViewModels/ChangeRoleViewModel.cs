@@ -1,4 +1,5 @@
 ﻿using BilimkanaAmerican.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace BilimkanaAmerican.ViewModels
 {
@@ -6,12 +7,13 @@ namespace BilimkanaAmerican.ViewModels
     {
         public string? UserId { get; set; }
         public string? UserEmail { get; set; }
-        public List<IdentityRole> AllRoles { get; set; }
-        public IList<string> UserRoles { get; set; }
-        public ChangeRoleViewModel()
+        public List<IdentityRole>? AllRoles { get; set; }
+        public IList<string>? UserRoles { get; set; }
+
+     /*   public ChangeRoleViewModel()
         {
             AllRoles = new List<IdentityRole>();
             UserRoles = new List<string>();
-        }
+        }*/
     }
 }
